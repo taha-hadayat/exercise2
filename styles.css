@@ -601,6 +601,7 @@ footer a {
 
   footer address:first-child > h2 {
     margin: 0px 0px 15px 0px;
+    padding: 0px;
   }
 
   #copyright {
