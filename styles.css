@@ -34,6 +34,7 @@ body {
   font-weight: 900;
   font-weight: bolder;
 }
+
 #starb:before,
 #starb:after {
   content: "";
@@ -51,37 +52,36 @@ body {
 }
 
 #header1 {
-  background-color: #2b3e50;
-  padding: 2.5em 4em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5em 4em;
+  align-items: center;
+  background-color: #2b3e50;
+  justify-content: space-between;
 }
 
 #header1 h1 {
-  /* color: #ffffff; */
   font-size: 2em;
 }
 
 #header1 nav {
   display: flex;
-  justify-content: space-around;
   align-content: center;
+  justify-content: space-around;
 }
 
 #header1 a {
-  text-decoration: none;
-  text-align: right;
+  width: 140px;
+  padding: 5px;
+  color: #ffffff;
   font-size: 1.1em;
+  text-align: right;
+  margin-right: 5px;
   font-weight: bold;
   text-align: center;
+  text-decoration: none;
   align-content: flex-start;
-  padding: 5px;
-  width: 140px;
-  margin-right: 5px;
-  color: #ffffff;
 }
 
 #header1 p {
@@ -90,60 +90,49 @@ body {
 
 #header2 {
   display: flex;
-  margin: 120px auto auto auto;
-  padding: 0px 0px 100px 0px;
   max-width: 1440px;
+  text-align: center;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 0px 0px 100px 0px;
+  margin: 120px auto auto auto;
 }
 
 #header2 img {
-  height: 250px;
   width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
 #header2 h1 {
-  margin-top: 30px;
   font-size: 4em;
-  /* font-size: 650%; */
+  margin-top: 30px;
 }
 
 #header2 span {
-  height: 24px;
   width: 24px;
+  height: 24px;
   color: white;
   text-align: center;
 }
 
 #header2 p {
-  margin-top: 30px;
   font-size: 2em;
+  margin-top: 30px;
   font-weight: bold;
 }
 
 .portfolio {
+  width: 100%;
+  margin: auto;
+  padding: 60px;
   display: grid;
-  /* grid-template-columns: auto auto auto; */
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 10vh 30vh 30vh; */
-  grid-template-rows: 1fr 3fr 3fr;
   grid-gap: 20px;
   color: #2b3e50;
-  /* padding: 100px; */
-  align-self: center;
-  justify-self: center;
-  justify-content: center;
-  align-items: center;
-  padding: 60px;
-  margin: auto;
-  /* height: 100vh; */
-  width: 100%;
   max-width: 1440px;
-  text-align: center;
-  vertical-align: middle;
+  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .portfolio .title {
@@ -154,16 +143,11 @@ body {
 .portfolio h1 {
   min-width: 0;
   font-size: 3em;
-  /* font-size: 450%; */
-  /* grid-column-start: 1;
-  grid-column-end: 4; */
   text-align: center;
   align-self: end;
 }
 
 .portfolio h2 {
-  /* grid-column-start: 1;
-  grid-column-end: 4; */
   text-align: center;
   align-self: flex-start;
   margin: 5px auto auto auto;
@@ -172,8 +156,8 @@ body {
 .portfolio div {
   width: 100%;
   align-self: center;
-  position: relative;
   border-radius: 5px;
+  position: relative;
 }
 
 .portfolio img {
@@ -183,25 +167,19 @@ body {
 }
 
 .about {
-  background-color: #18bc9c;
   width: 100%;
   padding: 60px;
-  height: auto;
-  color: white;
-
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  color: white;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #18bc9c;
 }
 
 .about h1 {
-  min-width: 0;
-
   font-size: 3em;
-  /* font-size: 300%; */
 }
 
 .about h2 {
@@ -210,21 +188,22 @@ body {
 }
 
 .about span {
-  height: 24px;
   width: 24px;
+  height: 24px;
   color: white;
   text-align: center;
 }
 
 .about .row {
-  display: flex;
   width: 100%;
-  max-width: 850px;
+  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
   font-size: 22px;
+  max-width: 850px;
   text-align: left;
+  flex-direction: row;
+  margin-bottom: 50px;
+  justify-content: space-between;
 }
 
 .about .left-col,
@@ -234,36 +213,32 @@ body {
 }
 
 .about .btn {
-  margin-top: 25px;
-  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
   border-radius: 5px;
+  align-items: center;
+  display: inline-block;
+  vertical-align: bottom;
+  justify-content: center;
   border: 2px solid #ffffff;
   padding: 18px 35px 15px 30px;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  vertical-align: bottom;
-  font-size: 20px;
-  cursor: pointer;
 }
 
 .contact {
   width: 100%;
   height: auto;
   padding: 60px;
-  color: #2b3e50;
-
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  color: #2b3e50;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact h1 {
   min-width: 0;
-  /* font-size: 300%; */
   font-size: 3em;
 }
 
@@ -272,64 +247,63 @@ body {
 }
 
 .contact form {
+  width: 100%;
   margin-top: 20px;
   max-width: 700px;
-  width: 100%;
   text-align: left;
   align-items: flex-start;
 }
 
 .contact label {
   width: 100%;
-  margin-top: 250px;
-  color: #70787e;
-  /* background-color: blue; */
   font-size: 20px;
-  font-weight: bold;
   margin: 20px 0px;
+  color: #70787e;
+  font-weight: bold;
+  margin-top: 250px;
 }
 
 .contact input {
-  margin: 20px 0px;
-  width: 100%;
   border: 0;
   outline: 0;
-  background: transparent;
+  width: 100%;
   font-size: 20px;
+  margin: 20px 0px;
+  background: transparent;
   border-bottom: 1px solid rgba(112, 120, 126, 0.3);
 }
 
 .contact textarea {
-  margin: 20px 0px;
-  height: 120px;
-  width: 100%;
   border: 0;
   outline: 0;
-  background: transparent;
+  width: 100%;
+  height: 120px;
   font-size: 20px;
+  margin: 20px 0px;
+  background: transparent;
   border-bottom: 1px solid rgba(112, 120, 126, 0.3);
 }
 
 .contact .btn {
   width: 100px;
-  margin-top: 5px;
   display: block;
+  font-size: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
   border-radius: 5px;
   padding: 18px 10px;
-  font-weight: bold;
-  font-size: 20px;
-  color: #ffffff;
-  background-color: #18bc9c;
   text-align: center;
   margin-bottom: 20px;
-  cursor: pointer;
+  background-color: #18bc9c;
 }
 
 footer > div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   color: #ffffff;
+  justify-content: center;
   background-color: #2b3e50;
 }
 
@@ -339,11 +313,10 @@ footer .info {
 }
 
 footer address {
+  flex-basis: 33%;
+  max-width: 500px;
   font-style: normal;
   text-align: center;
-  max-width: 500px;
-  flex-basis: 33%;
-  /* padding: 0px 40px; */
 }
 
 footer h2 {
@@ -355,20 +328,19 @@ footer span {
 }
 
 footer a {
-  border-radius: 50%;
+  padding: 12px;
   margin: 0px 2.5px;
-  padding: 20px;
+  border-radius: 50%;
   border: 2px solid white;
-  padding: 10px;
   justify-content: space-between;
 }
 
 #copyright {
-  background-color: #1a252e;
   width: 100%;
-  text-align: center;
-  color: white;
   padding: 30px;
+  color: white;
+  text-align: center;
+  background-color: #1a252e;
 }
 
 @media (max-height: 850px) {
@@ -406,11 +378,6 @@ footer a {
   }
 }
 
-/* arge devices (desktops, less than 1200px) */
-/* @media (max-width: 1199px) {
-} */
-
-/* Medium devices (tablets, less than 992px) */
 @media (max-width: 991px) {
   #header1 {
     padding: 2.5em 1.8em;
@@ -421,9 +388,9 @@ footer a {
   }
 
   #header1 a {
-    font-size: 1.1em;
-    padding: 5px;
     width: 110px;
+    padding: 5px;
+    font-size: 1.1em;
   }
 
   #header2 {
@@ -435,21 +402,28 @@ footer a {
   }
 
   .portfolio {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 3fr 3fr 3fr;
-    /* padding: 50px 20px 50px 20px; */
     width: 100%;
     height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 3fr 3fr 3fr;
   }
 
   .portfolio .title {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
   }
 
   .portfolio h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     vertical-align: text-bottom;
+  }
+
+  .about h1 {
+    font-size: 2.5em;
+  }
+
+  .contact h1 {
+    font-size: 2.5em;
   }
 
   .info {
@@ -463,25 +437,25 @@ footer a {
   }
 }
 
-/* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767px) {
   #header1 nav {
     display: none;
   }
 
   #header1 p {
-    display: inline-block;
-    font-weight: bold;
     padding: 15px;
-    background-color: #18bc9c;
-    font-size: 20px;
-    border-radius: 0.6em;
+    display: flex;
     cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0.6em;
+    background-color: #18bc9c;
+    justify-content: space-between;
   }
 
   #header1 span {
     font-size: 20px;
-    vertical-align: sub;
+    padding: 0px 0px 0px 10px;
   }
 
   .contact {
@@ -491,7 +465,6 @@ footer a {
   }
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
   .header {
     width: 100%;
@@ -499,12 +472,12 @@ footer a {
   }
 
   #header1 {
-    padding: 1em 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 2em;
+    align-items: center;
+    justify-content: space-between;
   }
 
   #header1 h1 {
@@ -515,6 +488,11 @@ footer a {
   #header1 p {
     padding: 10px;
     font-size: 13px;
+  }
+
+  #header1 span {
+    font-size: 15px;
+    padding: 0px 0px 0px 5px;
   }
 
   #header2 {
@@ -547,17 +525,17 @@ footer a {
   }
 
   .portfolio {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr repeat(6, 3fr);
-    grid-gap: 30px;
-    padding: 60px 30px;
     width: 100%;
     height: auto;
+    grid-gap: 30px;
+    padding: 60px 30px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr repeat(6, 3fr);
   }
 
   .portfolio .title {
-    grid-column-start: 1;
     grid-column-end: 2;
+    grid-column-start: 1;
   }
 
   .portfolio h1 {
@@ -566,8 +544,8 @@ footer a {
   }
 
   .about {
-    height: auto;
     width: 100%;
+    height: auto;
     padding: 60px 30px;
   }
 
@@ -584,18 +562,11 @@ footer a {
     flex-basis: 100%;
   }
 
-  /* .contact {
-    width: 100%;
-    height: auto;
-    padding: 50px 20px 50px 20px;
-  } */
-
   .contact {
     padding: 60px 30px;
   }
 
   .contact h1 {
-    /* margin: 0px; */
     font-size: 2em;
   }
 
