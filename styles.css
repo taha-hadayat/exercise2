@@ -185,8 +185,8 @@ body {
 }
 
 .about h2 {
-  justify-self: flex-start;
   margin-bottom: 20px;
+  justify-self: flex-start;
 }
 
 .about span {
@@ -322,7 +322,6 @@ footer address {
 }
 
 footer h2 {
-  /* padding: 30px 30px 15px 30px; */
   padding-bottom: 20px;
 }
 
@@ -598,6 +597,10 @@ footer a {
   .info h2 {
     margin: 25px 0px 15px 0px;
     padding: 0px;
+  }
+
+  footer address:first-child > h2 {
+    margin: 0px 0px 15px 0px;
   }
 
   #copyright {
